@@ -1,0 +1,115 @@
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+html {
+  background-color: #fff;
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  padding: 0 2em;
+  /* font-size: 1.25em; */
+  height: 100%;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+}
+
+header,
+footer {
+  background-color: #222;
+  height: 80px;
+  width: 100%;  
+  display: flex;
+}
+
+main {
+  background-color: #ccc;
+  height: 160px;
+  width: 100%;
+  display: flex;
+}
+
+header,
+main {
+  /*set display to flex and vertically & horizontally align by setting justify-content and align-items to center*/
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-container {
+  /*set display to flex and vertically & horizontally align by setting justify-content and align-items to center, and set flex-flow to row wrap*/
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  flex-flow: row wrap;
+  justify-content:space-between;
+  max-width: 1200px;
+}
+
+.flex-container .flex-column {
+    flex-wrap: nowrap;
+}
+
+#div-1,
+#div-2,
+#div-3 {
+  color: #fff;
+  line-height: 1.2em;
+  font-size: 1em;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  height: auto;
+  padding: 20px;
+}
+
+.wrapper span {
+  font-family: 'Lora', sans-serif;
+  font-size: 1.3em;
+}
+
+footer .flex-container {
+  width: 300px;
+  height: 100%;
+  margin: auto auto;
+  justify-content: space-around;    
+  align-items: center;
+}
+
+.flex-items {
+  /*set display to flex and vertically & horizontally align by setting justify-content and align-items to center*/
+  color: #fff;
+  line-height: 1.5em;
+  font-size: 1.6em;
+  background-color: #f16059;
+  width: 30%;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.flex-items span {
+    font-weight: bold;
+}
+
+@media all and (max-width: 768px) {
+    body {
+      padding: 1em;
+    }
+
+  .flex-container .flex-column {
+   flex-direction: column;
+  }
+  .flex-items {
+      width: calc(100% - 40px);
+  }
+}
+
+
